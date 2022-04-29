@@ -1,0 +1,113 @@
+/* -- Estilos Gerais -- */
+/*--------------------- */
+
+body, html{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	color:#000;
+	/* Centraliza */
+	margin: 10%;
+	padding:0;	
+}
+
+/* -- Tipografia -- */
+/*----------------- */
+* a:link, * a:visited, * a:hover {
+	color: #666666;
+	font-weight: bold;
+	text-decoration: underline;
+	content: " (" attr(href) ") ";
+}
+a.geral:link, a.geral:visited, a.geral:hover {
+	color: #666666;
+	font-weight: bold;
+	text-decoration: underline;
+	content: " (" attr(href) ") ";
+}
+
+/* -- Menu -- */
+/*----------- */
+#menu a:link img { filter:alpha(opacity=100); -moz-opacity: 1.0; opacity: 1.0; }
+#menu a:hover img { filter:alpha(opacity=100); -moz-opacity: 1.0; opacity: 1.0; }
+#menu-atual { visibility: visible; }
+#menu ul, li { display: inline; list-style: none; }
+#menu img { position: absolute; border-bottom: 2px solid #D9D9D9; border-top: none; }
+#cabecalho-img { border: none; position: absolute; top: 0px; right: 20px; }
+#menu-apresentacao { display: none; }
+#menu-introducao {display: none; }
+#menu-sistematica { display: none; }
+#menu-alfabetica { display: none; }
+#menu-fontes { display: none; }
+#menu-creditos { display: none; }
+
+/* -- Divs Gerais -- */
+/*------------------ */
+div#menu { width: 18cm; }
+div#middle { width: 10cm; margin:0px; }
+div#conteudo { padding: 0; margin-left: -160px; margin-top: -150px; width: 300px; }
+div#principal { width: 18cm; text-align: left; }
+div#esquerda { display: none; }
+
+div#marcas-outer {
+	height: 73px;
+	width: 740px;
+	margin: 0 auto;
+	background: white;
+	display: none;
+}
+div#marcas {
+	margin-left: 165px;
+	_margin-left: 160px;
+}
+
+/* -- Divs de Ajuste -- */
+/*--------------------- */
+div#espaco-menu { height: 215px; display:block; }
+div#espaco-rodape { height: 78px; display:block; }
+
+/* -- Divs de wrap -- */
+/*------------------- */
+
+div#headerwrap {
+	/* position:absolute para browsers antigos - toda a pagina rola */
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+	height:0px;
+	float: none;
+}
+
+div#middlewrap {
+	/* set a left margin to compensate for IE/Win always making room for a scrollbar  */
+	/* set left margin and bottom padding for IE5/Win */
+	padding: 15px 0 0 0;
+	margin-left: 0;
+	
+	/* set left margin and bottom padding for others */
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	margin-left:16px;
+	padding-bottom: 0px;
+}
+body>div#middlewrap {
+	/* set left margin for modern browsers */
+	margin-left:0;
+	padding: 15px 0 0 0;
+}
+
+div#footerwrap {
+	/* no positioning for IE5/Win - the whole page scrolls */
+	width:100%;
+	p\osition:absolute;
+	bottom:0;
+	left:0;
+	height:73px;
+}
+body>div#footerwrap {
+	position:fixed;
+}
+
+/* -- Especificas -- */
+/* ----------------- */
+#fontes-lista ol, #fontes-lista li { font: inherit; width: 18cm; }

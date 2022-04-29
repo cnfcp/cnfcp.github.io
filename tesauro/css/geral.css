@@ -1,0 +1,187 @@
+/* -- Estilos Gerais -- */
+/*--------------------- */
+
+body, html{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#000;
+	background: #FBF9F7;
+	background-image:url(../interface/fundo.gif);
+	background-position: 50%;
+	background-repeat: repeat-y;
+	/* Centraliza */
+	margin:0;
+	padding:0;	
+}
+body {
+	/* Largura minima para o Gecko */
+	min-width:760px;
+}
+
+/* -- Menu -- */
+/*----------- */
+#menu { background-repeat: no-repeat; background-position: 0 38px; }
+#menu div { background-repeat: no-repeat; }
+#menu a:link img { filter:alpha(opacity=100); -moz-opacity: 1.0; opacity: 1.0; }
+#menu a:hover img { filter:alpha(opacity=50); -moz-opacity: 0.5; opacity: 0.5; }
+#menu img { border: none; }
+#menu-atual { visibility: hidden; }
+#menu-apresentacao, #menu-introducao, #menu-sistematica, #menu-alfabetica, #menu-fontes, #menu-creditos { position: relative; float: left; margin-left: 20px; top: 110px; }
+#menu-apresentacao { margin-left: 180px; _margin-left: 90px; background-image:url(../interface/menu/bt-bg-apresentacao.gif); }
+#menu-introducao { background-image:url(../interface/menu/bt-bg-introducao.gif); }
+#menu-sistematica { background-image:url(../interface/menu/bt-bg-sistematica.gif); }
+#menu-alfabetica { background-image:url(../interface/menu/bt-bg-alfabetica.gif); }
+#menu-fontes { background-image:url(../interface/menu/bt-bg-fontes.gif); }
+#menu-creditos { background-image:url(../interface/menu/bt-bg-creditos.gif); }
+
+/* -- Tipografia -- */
+/*----------------- */
+h1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: large;
+	font-weight: bold;
+	color: black;
+	border-left: solid 2px #FFB600;
+	padding-left: 5px;
+}
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: medium;
+	font-weight: normal;
+	color: black;
+}
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: black;
+}
+h4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: smaller;
+	font-weight: normal;
+	color: black;
+	margin-bottom: -0.1em;
+}
+acronym {
+	text-decoration: none;
+	border: none;
+	cursor: help;
+}
+abbr {
+	text-decoration: none;
+	border: none;
+	cursor: help;
+}
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: black;
+}
+
+/* -- Divs Gerais -- */
+/*------------------ */
+div#menu {
+	height: 213px;
+	width: 760px;
+	margin:0 auto;
+	_padding-right: 15px;
+}
+div#middle {
+	width:760px;
+	margin:0 auto;
+	border-top: none;
+	border-bottom: none;
+}
+div#conteudo {
+	padding: 0 10px;
+	margin-left: 0px;
+}
+div#principal {
+	margin-left: 170px;
+	_margin-left: 160px;
+	width: 530px;
+	text-align: left;
+}
+div#principal2 {
+	margin-left: 170px;
+	_margin-left: 160px;
+	width: 530px;
+	text-align: left;
+}
+div#esquerda {
+	display: block;
+	width: 150px;
+	_width: 140px;
+	left: 0;
+	text-align: right;
+	float: left;
+}
+#esquerda img { border: none; }
+div#marcas-outer {
+	height: 73px;
+	width: 740px;
+	margin: 0 auto;
+	background: white;
+}
+div#marcas {
+	margin-left: 165px;
+	_margin-left: 160px;
+}
+#marcas img { border: none; }
+
+/* -- Divs de Ajuste -- */
+/*--------------------- */
+div#espaco-menu {
+	height: 215px;
+	display:block;
+}
+div#espaco-rodape {
+	height: 78px;
+	display:block;
+}
+
+/* -- Divs de wrap -- */
+/*------------------- */
+div#headerwrap {
+	/* position:absolute para browsers antigos - toda a pagina rola */
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+	height:213px;
+	float: none;
+}
+body>div#headerwrap {
+	/* position:fixed para os browsers modernos - cabecalho e rodape nao rolam */
+	position:fixed;
+}
+
+div#middlewrap {
+	/* set a left margin to compensate for IE/Win always making room for a scrollbar */
+	/* set left margin and bottom padding for IE5/Win */
+	padding: 15px 0 0 0;
+	margin-left: 0;
+	
+	/* set left margin and bottom padding for others */
+	voice-family: "\"}\""; 
+	voice-family:inherit;
+	margin-left:16px;
+	padding-bottom: 0px;
+}
+body>div#middlewrap {
+	/* set left margin for modern browsers */
+	margin-left:0;
+	padding: 15px 0 0 0;
+}
+
+div#footerwrap {
+	/* no positioning for IE5/Win - the whole page scrolls */
+	width:100%;
+	p\osition:absolute;
+	bottom:0;
+	left:0;
+	height:73px;
+}
+body>div#footerwrap {
+	position:fixed;
+}

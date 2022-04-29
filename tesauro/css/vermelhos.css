@@ -1,0 +1,84 @@
+a.texto {
+	color: black;
+}
+a.texto:visited {
+	color: black;
+}
+a.texto:hover {
+	color: #FF0000;
+}
+#principal ul, #principal li {
+	display: list-item;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	color: black;
+	list-style: url(../interface/marcadores/marcador_vermelho.gif);
+}
+#principal ul {
+	list-style: none;
+}
+#fontes-lista ol, #fontes-lista li {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	line-height: 120%;
+	color: black;
+	list-style:decimal;
+	list-style-image: none;
+	list-style-position:outside;
+	display: list-item;
+	width: 480px;
+}
+#fontes-lista li {
+	vertical-align: top;
+	margin: 0 0 5px 0;
+}
+#fontes-lista a, #fontes-lista a:visited {
+	color: black;
+	word-wrap: break-word;
+	display: inline;
+}
+#fontes-lista a:hover {
+	color: #FF0000;
+}
+#creditos-lista ul, #creditos-lista li {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	line-height: 120%;
+	color: black;
+	list-style: none;
+	list-style-position: inside;
+	display: list-item;
+	width: 480px;
+
+}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: small;
+	font-weight: bold;
+	color: black;
+	border-left: solid 2px #FF0000;
+	padding-left: 5px;
+}
+h3 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	font-weight: bold;
+	color: black;
+}
+p.c {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: black;
+	margin-top: -8px;	
+}
+
+a.geral {
+	color: black;
+}
+a.geral:visited {
+	color: black;
+}
+a.geral:hover {
+	color: #FF0000;
+}
